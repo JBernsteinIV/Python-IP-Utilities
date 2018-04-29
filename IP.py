@@ -27,8 +27,7 @@ def network(address):
     except InvalidAddressException:
         raise InvalidAddressException("Invalid IP address")
 
-#Double check errors in broadcast address range have been resolved.
-#Example: /16 network should have broadcast of: x.x.255.255
+#Find the broadcast address of the provided host address.
 def broadcast(address):
     try:
         if isinstance(address,IPv4):
