@@ -1,27 +1,7 @@
 """
-TODOS:
- -> Check validation of IP addresses so invalid subnets are caught.
-    -> Example: .250 is not a valid subnet mask.
- -> Implement IPv6 class
- -> Allow shortened IPv6 addresses to be used in both the IPv6 class's constructor and the IP
-    wrapper function.
- -> Make IPv4 and IPv6 child classes of IP class. Possibly make IP into an abstract base class
-    but that will require importing abc for Abstract Base Class module.
- -> Possibly remove exceptions and just return -1 on failure?
- -> Separate out functions and classes into distinct modules. Recompose later in final utility build.
- -> Check amount of possible host addresses. Fix bugs here!
-"""
-
-"""
 DEPENDENCIES:
  -> re for Regex
  -> binascii for binary of IPv6 (possibly remove later)
-"""
-
-"""
-LICENSE:
-This Python utility is licensed under the MIT license.
-Copyright 2018 John L. Bernstein IV (github.com/user/JBernsteinIV)
 """
 
 import re #For regex use of removing leading zeros in IPv6 address
